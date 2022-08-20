@@ -1,0 +1,34 @@
+@media only screen and (max-width: 600px) {
+  .logo-type {
+    font-size: 20px;
+  }
+
+  .nav-poster > a {
+    font-weight: 400;
+    font-size: 13px;
+  }
+
+  .nav-poster {
+    width: 100px;
+    height: 45px;
+    border-radius: 9px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .my_account {
+    font-size: 13px;
+  }
+
+  .footer > p {
+    font-size: 12px;
+  }
+
+  .social-media-icons > a > i {
+    color: black;
+    font-size: 22px;
+    cursor: pointer;
+  }
+}

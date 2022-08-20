@@ -1,0 +1,88 @@
+@import url('https://v1.fontapi.ir/css/Vazir');
+@import url('https://v1.fontapi.ir/css/Sahel');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+  font-family: 'Sahel', sans-serif;
+  outline: none;
+}
+
+body {
+  background-color: #ccc;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* navbar */
+
+.navbar {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo-type {
+  font-family: 'Vazir', sans-serif;
+  cursor: pointer;
+}
+
+.nav-poster {
+  width: 115px;
+  height: 50px;
+  border-radius: 9px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-poster > a{
+  font-weight:600;
+}
+
+.left-side-navbar {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  justify-content: space-around;
+}
+
+.my_account {
+  color: black;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: powderblue;
+  margin-top: 50px;
+  padding: 9px 20px;
+  align-items: center;
+  width: 100%;
+}
+
+.social-media-icons > a > i {
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* publics */
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
