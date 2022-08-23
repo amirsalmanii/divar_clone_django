@@ -1,0 +1,32 @@
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  justify-content: center;
+  align-items: center;
+  background: rgba(35,47,62,0);
+  padding: 10px 0;
+}
+
+.message {
+  min-width: 300px;
+  min-height: 50px;
+  background-color: burlywood;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-success {
+  background-color: #198754;
+}
+
+.message-error {
+  background-color: #ffc107;
+}
+
+.message > p {
+  color: white;
+}
