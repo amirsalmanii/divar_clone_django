@@ -1,7 +1,11 @@
 <nav class="navbar">
   <h1 class="logo-type">همراه مهاجر</h1>
   <div class="left-side-navbar">
+    {% if user.is_authenticated %}
     <a class='my_account' href="#">حساب من</a>
+    {% else %}
+    <a class='my_account' href="{% url 'accounts:login' %}">ورود/ثبت نام</a>
+    {% endif %}
     <div class="nav-poster">
       <a href="#">ثبت آگهی رایگان</a>
     </div>
