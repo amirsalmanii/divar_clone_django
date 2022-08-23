@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="{% static 'css/base.css' %}">
   <link rel="stylesheet" href="{% static 'css/responsive_base.css' %}">
+  <link rel="stylesheet" href="{% static 'css/messages.css' %}">
   {% block link %}{% endblock %}
   <title>base</title>
 </head>
@@ -15,7 +16,9 @@
   <div class="container">
     {% include 'inc/navbar.html' %}
     <main>
-    {% block content %}{% endblock %}
+    {% block content %}
+      {% include 'inc/messages.html' %}
+    {% endblock %}
     </main>
     {% include 'inc/footer.html' %}
   </div>
