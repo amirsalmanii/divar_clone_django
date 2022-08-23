@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block link %}
+  <link rel="stylesheet" href="{% static 'css/login_style.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="login_form_container">
+  <form method="post" class="login_form">
+    <h2>ورود</h2>
+    <p>لطفا برای ورود ایمیل و رمز عبور خود را وارد کنید</p>
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="ورود">
+  </form>
+</div>
+{% endblock %}
