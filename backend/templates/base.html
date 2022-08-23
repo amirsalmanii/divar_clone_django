@@ -8,14 +8,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="{% static 'css/base.css' %}">
   <link rel="stylesheet" href="{% static 'css/responsive_base.css' %}">
+  {% block link %}{% endblock %}
   <title>base</title>
 </head>
 <body>
   <div class="container">
     {% include 'inc/navbar.html' %}
-
+    <main>
     {% block content %}{% endblock %}
-    
+    </main>
     {% include 'inc/footer.html' %}
   </div>
 </body>
